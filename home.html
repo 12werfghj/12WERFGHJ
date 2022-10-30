@@ -7,33 +7,72 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <!--icon-->
         <link href="images/ar4uw-shr6y-001.ico" rel="shortcut icon"/>
+        <link rel="stylesheet" href="style.css"/>
         <title>12WERFGHJ</title>
     </head>
     <body>
+        <!--背景圖片-->
         <style>
             body {
-              background-image: url('images/sunrise.png');
-              background-size: cover;
-              background-attachment: fixed;
-              background-position: top;
+                background-image: url('images/Colorscape0.jpg');
+                background-size:cover;
+                background-attachment: fixed;
+                background-position:center;
+                object-position: center;
             }
         </style>
-        <!--標題-->
-        <h1 style="color:rgb(5, 83, 252);"><b>12WERFGHJ</b></h1>
-        <h2><b style="color:blueviolet;">Minecraft Buildings Constructer</b></h2>
-        <br/><hr/>
+        <!--Header-->
+        <div style="position:fixed; top:0px; left:0px; height:60px; width:1500px; background-color:white;">
+            <div>
+                <a href="home.html"><img src="images/16665377499641.jpg" style="position:fixed; top:0px; left:75px; height:60px; border-radius:5px;"/></a>
+            </div>
+            <div style="position:fixed; right:50px;">
+                <ul style="padding:5px; margin:10px;">
+                    <li style="display:inline;">
+                        <div class="dropdown-menu">
+                            <button class="dropdownbtn" style="right:500px;"><h2>Minecraft</h2></button>
+                            <div class="dropdown-select">
+                                <a href="pages/minecraft/modern_city.html" style="top:60px; right:500px;"><h2 style="display:block;">Modern City</h2></a>
+                                <a href="pages/minecraft/survival_buildings.html" style="top:120px; right:500px;"><h2 style="display:block;">Survival</h2></a>
+                                <a href="pages/minecraft/sanxiabridge.html" style="top:180px; right:500px;"><h2 style="display:block;">Bridges</h2></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="display:inline;">
+                        <div class="dropdown-menu">
+                            <button class="dropdownbtn" style="right:350px;">
+                                <a href="pages/speed_drifter.html"><h2 style="margin:auto;">Speed Drifter</h2></a>
+                            </button>
+                        </div>
+                    </li>
+                    <li style="display:inline;">
+                        <div class="dropdown-menu">
+                            <button class="dropdownbtn" style="right:200px;"><a href="pages/photoing.html"><h2 style="margin:auto;">Photoing</h2></a></button>
+                        </div>
+                    </li>
+                    <li style="display:inline;">
+                        <div class="dropdown-menu">
+                            <button class="dropdownbtn" style="right:50px;"><h2 style="display:inline;">Coding</h2></button>
+                            <div class="dropdown-select">
+                                <a href="pages/coding/python.html" style="top:60px; right:50px;"><h2 style="display:block;">Python</h2></a>
+                                <a href="pages/coding/html.html" style="top:120px; right:50px;"><h2 style="display:block;">Html</h2></a>
+                                <a href="pages/coding/css.html" style="top:180px; right:50px;"><h2 style="display:block;">CSS</h2></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br/><br/><br/><br/><br/>
         <!--內容-->
-        <ul><li><h2><b style="color:aliceblue;">My YouTube Channel</b></h2></li></ul>
-        <a href="https://www.youtube.com/channel/UCoB7uVoNkNEOlZviQzjje7w"><img src="images/Modern Train Station 1.png" width="555"/></a>
-        <br/><br/><br/>
-        <ul><li><h2 style="color:aliceblue;">The Latest Video</h2></li></ul>
-        <!--嵌入-->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/-qyF2GD_IF0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <a href="https://www.youtube.com/channel/UCoB7uVoNkNEOlZviQzjje7w"><img src="images/Modern Train Station 1.png" width="600" style="border-radius:10px; margin:auto;"/></a>
+        <br/><br/><br/><br/><br/><br/><br/><br/>
+        <b><h2 style="margin:auto; background-color:black; color:white; width: 200px; padding:10px; display:block; border-radius:5px; text-align:center;">The Latest Video</h2></b>
         <br/><br/>
-        <h2><b style="color:aliceblue;">About Me</b></h2>
-        <ul>
-            <li><h3><a href="pages/modern_city.html" style="color:aliceblue;">Minecraft Modern City</a></h3></li>
-            <li><h3><a href="pages/survival_buildings.html" style="color:aliceblue;">Minecraft Survival Buildings</a></h3></li>
-        </ul>
+        <!--嵌入-->
+        <div class="iframein">
+            <iframe width="600" height="342" src="https://www.youtube.com/embed/-qyF2GD_IF0" style="margin:auto; display:block" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <br/><br/>
     </body>
 </html>
