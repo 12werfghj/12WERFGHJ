@@ -9,6 +9,9 @@
         <link rel="shortcut icon" href="images/ar4uw-shr6y-001.ico"/>
         <link rel="stylesheet" href="style.css"/>
         <title>12WERFGHJ</title>
+        <link href='https://fonts.googleaois.com/css?family=Montserrat' rel='stylesheet'>
+        <link href='nav-bar-test.css' rel='stylesheet'>
+        <script src="nav-bar-test.js"></script>
     </head>
     <body>
         <!--背景圖片-->
@@ -22,61 +25,40 @@
             }
         </style>
         <!--Header-->
+        <header>
+            <div id='burger' onclick="enable()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav" id="nav">
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="pages/minecraft/modern_city.html">Modern City</a>
+                </li>
+                <li>
+                    <a href="pages/minecraft/survival_buildings.html">Survival Buildings</a>
+                </li>
+                <li>
+                    <a href="pages/minecraft/sanxiabridge.html">Bridges</a>
+                </li>
+                <li>
+                    <a href="pages/speed_drifter.html">Speed Drifter</a>
+                </li>
+                <li>
+                    <a href="pages/photoing.html">Photoing</a>
+                </li>
+                <li>
+                    <a href="pages/coding/python.html">Python</a>
+                </li>
+            </nav>
+        </header>
         <div style="position:fixed; top:0px; left:0px; height:60px; width:1500px; background-color:white;">
             <!--Menu-->
-            <div class="menu">
-                <!--Menu Box-->
-                <div class="left_menu">
-                    <!--Menu Button-->
-                    <div class="menubtn">
-                        <input hidden type="checkbox" name="contact" id="menu_btn-check"/>
-                        <label for="menu_btn-check">
-                            <img class="menubtn_img" src="images/menubtn.png"/>
-                        </label>
-                    </div>
-                    <div class="left_menu">
-                        <ul>
-                            <!--Minecraft-->
-                            <li style="display:block;">
-                                <div class="left_menu_select">
-                                    <button class="left_menu_select_btn" style="left:0px;top:60px;"><h2>Minecraft</h2></button>
-                                    <div class="left_menu_select_a">
-                                        <a href="pages/minecraft/modern_city.html" style="top:60px;"><h2>Modern City</h2></a>
-                                        <a href="pages/minecraft/survival_buildings.html" style="top:120px;"><h2>Survival</h2></a>
-                                        <a href="pages/minecraft/sanxiabridge.html" style="top:180px;"><h2 >Bridges</h2></a>
-                                    </div>
-                                </div>
-                            </li>
-                            <!--Speed Drifter-->
-                            <li style="display:block;">
-                                <div class="left_menu_select">
-                                    <button class="left_menu_select_btn" style="left:0px;top:120px;">
-                                        <a href="pages/speed_drifter.html"><h2 style="margin:auto;">Speed Drifter</h2></a>
-                                    </button>
-                                </div>
-                            </li>
-                            <!--Photoing-->
-                            <li style="display:block;">
-                                <div class="left_menu_select">
-                                    <button class="left_menu_select_btn" style="left:0px;top:180px;"><a href="pages/photoing.html"><h2 style="margin:auto;">Photoing</h2></a></button>
-                                </div>
-                            </li>
-                            <!--Coding-->
-                            <li style="display:block;">
-                                <div class="left_menu_select">
-                                    <button class="left_menu_select_btn" style="left:0px;top:240px;"><h2 style="display:inline;">Coding</h2></button>
-                                    <div class="left_menu_select_a">
-                                        <a href="pages/coding/python.html" style="top:240px; left:50px;"><h2 style="display:block;">Python</h2></a>
-                                        <a href="pages/coding/html.html" style="top:300px; left:50px;"><h2 style="display:block;">Html</h2></a>
-                                        <a href="pages/coding/css.html" style="top:360px; left:50px;"><h2 style="display:block;">CSS</h2></a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>    
-            <a href="home.html"><img src="images/16665377499641.jpg" style="position:fixed; top:0px; left:76px; height:60px; border-radius:5px; z-index:2;"/></a>
+            <a href="home.html"><img src="images/16665377499641.jpg" style="position:fixed; top:0px; left:100px; height:60px; border-radius:5px; z-index:2;"/></a>
             <div style="position:fixed; right:50px;">
                 <ul style="padding:5px; margin:10px;">
                     <li style="display:inline;">
@@ -116,9 +98,9 @@
         </div>
         <br/><br/><br/><br/><br/>
         <!--內容-->
-        <a href="https://www.youtube.com/channel/UCoB7uVoNkNEOlZviQzjje7w"><img src="images/Modern Train Station 1.png" width="600" style="border-radius:10px; margin:auto;"/></a>
+        <a href="https://www.youtube.com/channel/UCoB7uVoNkNEOlZviQzjje7w"><img src="images/Modern Train Station 1.png" class="home_photos"/></a>
         <br/><br/><br/><br/><br/><br/><br/><br/>
-        <b><h2 style="margin:auto; background-color:black; color:white; width: 200px; padding:10px; display:block; border-radius:5px; text-align:center;">The Latest Video</h2></b>
+        <b><h2 style="margin:auto; background-color:black; color:white; width: 250px; padding:10px; display:block; border-radius:15px; text-align:center;">The Latest Video</h2></b>
         <br/><br/>
         <!--嵌入-->
         <div class="iframein">
