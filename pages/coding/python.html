@@ -8,7 +8,12 @@
         <!--icon-->
         <link href="../../images/ar4uw-shr6y-001.ico" rel="shortcut icon"/>
         <link rel="stylesheet" href="../../css/style.css"/>
+        <link href='https://fonts.googleaois.com/css?family=Montserrat' rel='stylesheet'>
+        <link href='../../css/nav-bar-test.css' rel='stylesheet'>
+        <script src="../../js/nav-bar-test.js"></script>
         <title>12WERFGHJ</title>
+        <!--Search Button CSS-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     </head>
     <body>
         <!--背景圖片-->
@@ -22,9 +27,40 @@
             }
         </style>
         <!--Header-->
+        <header>
+            <div id='burger' onclick="enable()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav" id="nav">
+                <li>
+                    <a href="../../home.html">Home</a>
+                </li>
+                <li>
+                    <a href="../minecraft/">Modern City</a>
+                </li>
+                <li>
+                    <a href="../minecraft/">Survival Buildings</a>
+                </li>
+                <li>
+                    <a href="../sanxiabridge.html">Bridges</a>
+                </li>
+                <li>
+                    <a href="../speed_drifter.html">Speed Drifter</a>
+                </li>
+                <li>
+                    <a href="../photoing.html">Photoing</a>
+                </li>
+                <li>
+                    <a href="../coding/python.html">Python</a>
+                </li>
+            </nav>
+        </header>
         <div style="position:fixed; top:0px; left:0px; height:60px; width:1500px; background-color:white;">
             <div>
-                <a href="../../home.html"><img src="../../images/16665377499641.jpg" style="position:fixed; top:0px; left:75px; height:60px; border-radius:5px;"/></a>
+                <a href="../../home.html"><img src="../../images/16665377499641.jpg" class="home_button"/></a>
             </div>
             <div style="position:fixed; right:50px;">
                 <ul style="padding:5px; margin:10px;">
@@ -63,6 +99,7 @@
                 </ul>
             </div>
         </div>
+        <i class="fa fa-search"></i>
         <br/><br/><br/><br/><br/>
         <!--內容-->
         <h1 style="color:white; display:block; background-color:black; text-align:center;"><b>Zerojudge Python 解題紀錄</b></h1>
