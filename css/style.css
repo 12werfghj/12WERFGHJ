@@ -1,3 +1,8 @@
+
+html,body {
+    margin: 0;
+    padding: 0;
+}
 @media screen and (max-width:1000px){
     div.dropdown-menu{
         display: none;
@@ -34,12 +39,69 @@
     z-index:101;
 }
 .home_photos {
-    position:initial;
+    position: relative;
     margin: auto;
     width:600px; 
     border-radius:10px; 
     align-items:center;
     justify-content: center;    
+}
+.pic-ctn {
+    position: relative;
+    width: 600px;
+    height: 340px;
+    margin-top: 15vh;
+    align-items: center;
+    left: 135px;
+}
+@keyframes display {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    30% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+}
+.pic {
+    width: 600px;
+    height: 337.5px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100px);
+    opacity: 0;
+    animation: display 35s infinite;
+}
+.pic:nth-child(2) {
+    animation-delay: 7s;
+}
+.pic:nth-child(3) {
+    animation-delay: 14s;
+}
+.pic:nth-child(4) {
+    animation-delay: 21s;
+}
+.pic:nth-child(5) {
+    animation-delay: 28s;
+}
+.pic:nth-child(6) {
+    animation-delay: 35s;
+}
+.pic:nth-child(7) {
+    animation-delay: 42s;
 }
 .iframein {
     margin:auto;
