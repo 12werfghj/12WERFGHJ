@@ -1,163 +1,183 @@
-<div id="glowscript" class="glowscript">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link type="text/css" href="https://www.glowscript.org/css/redmond/2.1/jquery-ui.custom.css" rel="stylesheet" />
-<link type="text/css" href="https://www.glowscript.org/css/ide.css" rel="stylesheet" />
-<script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery-ui.custom.min.js"></script>
-<script type="text/javascript" src="https://www.glowscript.org/package/glow.3.2.min.js"></script>
-<script type="text/javascript" src="https://www.glowscript.org/package/RSrun.3.2.min.js"></script>
-<script type="text/javascript"><!--//--><![CDATA[//><!--
-
-// START JAVASCRIPT
-;(function() {;
-var ρσ_modules = {};
-ρσ_modules.pythonize = {};
-
-(function(){
-    function strings() {
-        var string_funcs, exclude, name;
-        string_funcs = set("capitalize strip lstrip rstrip islower isupper isspace lower upper swapcase center count endswith startswith find rfind index rindex format join ljust rjust partition rpartition replace split rsplit splitlines zfill".split(" "));
-        if (!arguments.length) {
-            exclude = (function(){
-                var s = ρσ_set();
-                s.jsset.add("split");
-                s.jsset.add("replace");
-                return s;
-            })();
-        } else if (arguments[0]) {
-            exclude = Array.prototype.slice.call(arguments);
-        } else {
-            exclude = null;
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--網頁屬性-->
+        <meta charset="UTF-8"/>
+        <meta name="keywords" content="12WERFGHJ,  Minecraft,  buildings"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!--icon-->
+        <link href="../../images/ar4uw-shr6y-001.ico" rel="shortcut icon"/>
+        <link rel="stylesheet" href="../../css/style.css"/>
+        <link href='https://fonts.googleaois.com/css?family=Montserrat' rel='stylesheet'>
+        <link href='../../css/nav-bar-test.css' rel='stylesheet'>
+        <script src="../../js/nav-bar-test.js"></script>
+        <title>12WERFGHJ</title>
+        <!--Search Button CSS-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="glowscript" class="glowscript">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link type="text/css" href="https://www.glowscript.org/css/redmond/2.1/jquery-ui.custom.css" rel="stylesheet" />
+        <link type="text/css" href="https://www.glowscript.org/css/ide.css" rel="stylesheet" />
+        <script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery-ui.custom.min.js"></script>
+        <script type="text/javascript" src="https://www.glowscript.org/package/glow.3.2.min.js"></script>
+        <script type="text/javascript" src="https://www.glowscript.org/package/RSrun.3.2.min.js"></script>
+        <script type="text/javascript"><!--//--><![CDATA[//><!--
+    
+    // START JAVASCRIPT
+        ;(function() {;
+        var ρσ_modules = {};
+        ρσ_modules.pythonize = {};
+    
+        (function(){
+            function strings() {
+                var string_funcs, exclude, name;
+                string_funcs = set("capitalize strip lstrip rstrip islower isupper isspace lower upper swapcase center count endswith startswith find rfind index rindex format join ljust rjust partition rpartition replace split rsplit splitlines zfill".split(" "));
+                if (!arguments.length) {
+                    exclude = (function(){
+                    var s = ρσ_set();
+                    s.jsset.add("split");
+                    s.jsset.add("replace");
+                    return s;
+                })();
+            } else if (arguments[0]) {
+                exclude = Array.prototype.slice.call(arguments);
+            } else {
+                exclude = null;
+            }
+            if (exclude) {
+                string_funcs = string_funcs.difference(set(exclude));
+            }
+            var ρσ_Iter0 = string_funcs;
+            ρσ_Iter0 = ((typeof ρσ_Iter0[Symbol.iterator] === "function") ? (ρσ_Iter0 instanceof Map ? ρσ_Iter0.keys() : ρσ_Iter0) : Object.keys(ρσ_Iter0));
+            for (var ρσ_Index0 of ρσ_Iter0) {
+                name = ρσ_Index0;
+                (ρσ_expr_temp = String.prototype)[(typeof name === "number" && name < 0) ? ρσ_expr_temp.length + name : name] = (ρσ_expr_temp = ρσ_str.prototype)[(typeof name === "number" && name < 0) ? ρσ_expr_temp.length + name : name];
+            }
+        };
+        if (!strings.__module__) Object.defineProperties(strings, {
+            __module__ : {value: "pythonize"}
+        });
+    
+        ρσ_modules.pythonize.strings = strings;
+    })();
+    async function __main__() {
+    "use strict";
+        var display = canvas;
+        var scene = canvas();
+    
+        function input(arg) {
+            arg = arg || {}
+            if (arg.prompt !== undefined && arg.prompt != '') return prompt(arg.prompt)
+            else if (typeof arg === 'string') return prompt(arg)
+            else return prompt()
         }
-        if (exclude) {
-            string_funcs = string_funcs.difference(set(exclude));
-        }
-        var ρσ_Iter0 = string_funcs;
-        ρσ_Iter0 = ((typeof ρσ_Iter0[Symbol.iterator] === "function") ? (ρσ_Iter0 instanceof Map ? ρσ_Iter0.keys() : ρσ_Iter0) : Object.keys(ρσ_Iter0));
-        for (var ρσ_Index0 of ρσ_Iter0) {
-            name = ρσ_Index0;
-            (ρσ_expr_temp = String.prototype)[(typeof name === "number" && name < 0) ? ρσ_expr_temp.length + name : name] = (ρσ_expr_temp = ρσ_str.prototype)[(typeof name === "number" && name < 0) ? ρσ_expr_temp.length + name : name];
+    
+        var version, print, arange, __name__, type, ρσ_ls, m1, m2, x, scene, floor, wall, box1, box2, t, dt, ct, label1, label2, label3, ρσ_unpack;
+        version = ρσ_list_decorate([ "3.2", "glowscript" ]);
+        Array.prototype['+'] = function(r) {return this.concat(r)}
+        Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
+        window.__GSlang = "vpython";
+        print = GSprint;
+        arange = range;
+        __name__ = "__main__";
+        type = pytype;
+        var strings = ρσ_modules.pythonize.strings;
+    
+        strings();
+        sleep(.1);
+        "4";
+        m1 = int(input("Yelllow box weight:"));
+        (await sleep(.1));
+        "5";
+        m2 = int(input("Blue box weight:"));
+        (await sleep(.1));
+        "6";
+        x = 10["*"](int(input("Blue box initial speed: (1~10)")));
+        "7";
+        scene = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({title: "Level Collision", width: 800, height: 600, center: vector(5, 50, 0), x: 0, y: 0, background: vector(.698, .4, 1), range: 200})]);
+        "8";
+        floor = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), length: 600, height: 5, width: 200, color: vector(167["/"](255), 225["/"](255), 116["/"](255))})]);
+        "9";
+        wall = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](200), 100, 0), length: 10, height: 200, width: 200, color: vector(167["/"](255), 225["/"](255), 116["/"](255))})]);
+        "10";
+        box1 = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, 12.5, 0), length: 20, height: 20, width: 20, v: vector(0, 0, 0), color: vector(240["/"](255), 213["/"](255), 103["/"](255))})]);
+        "11";
+        box2 = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(100, 12.5, 0), length: 20, height: 20, width: 20, v: vector(1["-u"]()["*"](x), 0, 0), color: vector(27["/"](255), 236["/"](255), 238["/"](255))})]);
+        "12";
+        t = 0;
+        "13";
+        dt = .01;
+        "14";
+        ct = 0;
+        "15";
+        async function af_col_v(m1, m2, v1, v2) {
+            var ρσ_ls, v1_prime, v2_prime;
+            "16";
+            v1_prime = m1["-"](1["*"](m2))["/"](m1["+"](m2))["*"](v1)["+"](2["*"](m2)["/"](m1["+"](m2))["*"](v2));
+            "17";
+            v2_prime = 2["*"](m1)["/"](m1["+"](m2))["*"](v1)["+"](m2["-"](1["*"](m1))["/"](m1["+"](m2))["*"](v2));
+            "18";
+            return [v1_prime, v2_prime];
+        };
+        if (!af_col_v.__argnames__) Object.defineProperties(af_col_v, {
+            __argnames__ : {value: ["m1", "m2", "v1", "v2"]},
+            __module__ : {value: null}
+        });
+    
+        "19";
+        label1 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({text: ct, pos: vec(0, 150, 0), color: color.cyan, box: false})]);
+        "20";
+        label2 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({text: "Collision:", pos: vec(1["-u"]()["*"](40), 150, 0), color: color.cyan, box: false})]);
+        "21";
+        label3 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({text: "Times", pos: vec(30, 150, 0), color: color.cyan, box: false})]);
+        "22";
+        while (t[">"](1["-u"]()["*"](1))) {
+            "23";
+            (await rate(1["/"](dt)));
+            "24";
+            box1.pos = box1.pos["+"](box1.v["*"](dt));
+            "25";
+            box2.pos = box2.pos["+"](box2.v["*"](dt));
+            "26";
+            if (box2.pos.x["-"](1["*"](box1.pos.x))["<"](20)) {
+                "27";
+                ρσ_unpack = (await af_col_v(m1, m2, box1.v.x, box2.v.x));
+    ρσ_unpack = ρσ_unpack_asarray(2, ρσ_unpack);
+                box1.v.x = ρσ_unpack[0];
+                box2.v.x = ρσ_unpack[1];
+                "28";
+                ct=ct["+"](1);
+                "29";
+                label1 = undefined;
+                "30";
+                label1 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({text: ct, pos: vec(0, 150, 0), color: color.cyan, box: false})]);
+                "31";
+            }
+            if (box1.pos.x["-"](1["*"](wall.pos.x))["<"](15)) {
+                "32";
+                box1.v.x = 1["-u"]()["*"](box1.v.x);
+                "33";
+                ct=ct["+"](1);
+                "34";
+                label1 = undefined;
+                "35";
+                label1 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({text: ct, pos: vec(0, 150, 0), color: color.cyan, box: false})]);
+            }
+            "41";
+            t = t["+"](dt);
         }
     };
-    if (!strings.__module__) Object.defineProperties(strings, {
-        __module__ : {value: "pythonize"}
-    });
-
-    ρσ_modules.pythonize.strings = strings;
-})();
-async function __main__() {
-"use strict";
-    var display = canvas;
-    var scene = canvas();
-
-    function input(arg) {
-    	arg = arg || {}
-    	if (arg.prompt !== undefined && arg.prompt != '') return prompt(arg.prompt)
-    	else if (typeof arg === 'string') return prompt(arg)
-    	else return prompt()
-    }
-
-    var version, print, arange, __name__, type, ρσ_ls, m1, m2, x, scene, floor, wall, box1, box2, t, dt, ct, label1, label2, label3, ρσ_unpack;
-    version = ρσ_list_decorate([ "3.2", "glowscript" ]);
-    Array.prototype['+'] = function(r) {return this.concat(r)}
-    Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
-    window.__GSlang = "vpython";
-    print = GSprint;
-    arange = range;
-    __name__ = "__main__";
-    type = pytype;
-    var strings = ρσ_modules.pythonize.strings;
-
-    strings();
-    sleep(.1);
-    "4";
-    m1 = int(input("Yelllow box weight:"));
-    (await sleep(.1));
-    "5";
-    m2 = int(input("Blue box weight:"));
-    (await sleep(.1));
-    "6";
-    x = 10["*"](int(input("Blue box initial speed: (1~10)")));
-    "7";
-    scene = ρσ_interpolate_kwargs.call(this, canvas, [ρσ_desugar_kwargs({title: "Level Collision", width: 800, height: 600, center: vector(5, 50, 0), x: 0, y: 0, background: vector(.698, .4, 1), range: 200})]);
-    "8";
-    floor = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, 0, 0), length: 600, height: 5, width: 200, color: vector(167["/"](255), 225["/"](255), 116["/"](255))})]);
-    "9";
-    wall = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(1["-u"]()["*"](200), 100, 0), length: 10, height: 200, width: 200, color: vector(167["/"](255), 225["/"](255), 116["/"](255))})]);
-    "10";
-    box1 = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(0, 12.5, 0), length: 20, height: 20, width: 20, v: vector(0, 0, 0), color: vector(240["/"](255), 213["/"](255), 103["/"](255))})]);
-    "11";
-    box2 = ρσ_interpolate_kwargs.call(this, box, [ρσ_desugar_kwargs({pos: vector(100, 12.5, 0), length: 20, height: 20, width: 20, v: vector(1["-u"]()["*"](x), 0, 0), color: vector(27["/"](255), 236["/"](255), 238["/"](255))})]);
-    "12";
-    t = 0;
-    "13";
-    dt = .01;
-    "14";
-    ct = 0;
-    "15";
-    async function af_col_v(m1, m2, v1, v2) {
-        var ρσ_ls, v1_prime, v2_prime;
-        "16";
-        v1_prime = m1["-"](1["*"](m2))["/"](m1["+"](m2))["*"](v1)["+"](2["*"](m2)["/"](m1["+"](m2))["*"](v2));
-        "17";
-        v2_prime = 2["*"](m1)["/"](m1["+"](m2))["*"](v1)["+"](m2["-"](1["*"](m1))["/"](m1["+"](m2))["*"](v2));
-        "18";
-        return [v1_prime, v2_prime];
-    };
-    if (!af_col_v.__argnames__) Object.defineProperties(af_col_v, {
-        __argnames__ : {value: ["m1", "m2", "v1", "v2"]},
+    if (!__main__.__module__) Object.defineProperties(__main__, {
         __module__ : {value: null}
     });
-
-    "19";
-    label1 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({text: ct, pos: vec(0, 150, 0), color: color.cyan, box: false})]);
-    "20";
-    label2 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({text: "Collision:", pos: vec(1["-u"]()["*"](40), 150, 0), color: color.cyan, box: false})]);
-    "21";
-    label3 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({text: "Times", pos: vec(30, 150, 0), color: color.cyan, box: false})]);
-    "22";
-    while (t[">"](1["-u"]()["*"](1))) {
-        "23";
-        (await rate(1["/"](dt)));
-        "24";
-        box1.pos = box1.pos["+"](box1.v["*"](dt));
-        "25";
-        box2.pos = box2.pos["+"](box2.v["*"](dt));
-        "26";
-        if (box2.pos.x["-"](1["*"](box1.pos.x))["<"](20)) {
-            "27";
-            ρσ_unpack = (await af_col_v(m1, m2, box1.v.x, box2.v.x));
-ρσ_unpack = ρσ_unpack_asarray(2, ρσ_unpack);
-            box1.v.x = ρσ_unpack[0];
-            box2.v.x = ρσ_unpack[1];
-            "28";
-            ct=ct["+"](1);
-            "29";
-            label1 = undefined;
-            "30";
-            label1 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({text: ct, pos: vec(0, 150, 0), color: color.cyan, box: false})]);
-            "31";
-        }
-        if (box1.pos.x["-"](1["*"](wall.pos.x))["<"](15)) {
-            "32";
-            box1.v.x = 1["-u"]()["*"](box1.v.x);
-            "33";
-            ct=ct["+"](1);
-            "34";
-            label1 = undefined;
-            "35";
-            label1 = ρσ_interpolate_kwargs.call(this, label, [ρσ_desugar_kwargs({text: ct, pos: vec(0, 150, 0), color: color.cyan, box: false})]);
-        }
-        "41";
-        t = t["+"](dt);
-    }
-};
-if (!__main__.__module__) Object.defineProperties(__main__, {
-    __module__ : {value: null}
-});
-
-;$(function(){ window.__context = { glowscript_container: $("#glowscript").removeAttr("id") }; __main__() })})()
-// END JAVASCRIPT
-
-//--><!]]></script>
-</div>
+    
+    ;$(function(){ window.__context = { glowscript_container: $("#glowscript").removeAttr("id") }; __main__() })})()
+    // END JAVASCRIPT
+    
+    //--><!]]></script>
+    </div>
+    </body>
+</html>
